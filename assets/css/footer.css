@@ -14,9 +14,10 @@
 
 .navbar .container p:hover {
   color: white;
+  cursor: pointer;
 }
 
-.navbar-nav {
+#navbar-nav {
   height: 100% !important;
 }
 
@@ -27,14 +28,15 @@
   transition: all 0.3s ease;
 }
 
-.nav-item a {
+.nav-item div {
   width: 100%;
   height: 100%;
   color: white !important;
 }
 
-.nav-item a:hover {
+.nav-item div:hover {
   color: #2eb3ff !important;
+  cursor: pointer;
 }
 
 .information {
@@ -114,15 +116,19 @@
   font-size: 15px;
   padding-top: 4px;
   text-decoration: none;
-  color: white;
+  color: white !important;
 }
 
 .footer-contents div ul li a .sosmed-icon:hover {
-  background-color: bisque;
+  color: white !important;
 }
 
 .footer-contents div ul li a .facebook:hover {
   background-color: #0077df;
+}
+
+.footer-contents div ul li a .facebook:hover i {
+  color: white !important;
 }
 
 .footer-contents div ul li a .twitter:hover {

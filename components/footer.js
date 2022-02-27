@@ -16,7 +16,7 @@ function createTemplate() {
                         <div class="footer-about">
                             <h5>About Us</h5>
                             <div class="company-logo">
-                                <img src="assets/img/aufcode-logo.png" alt="">
+                                <img src="/assets/img/aufcode-logo.png" alt="">
                             </div>
                             <p>We are a company that provides solutions to all problems through a digital technology in the <strong>web internet</strong>, <strong>social media</strong>, <strong>artificial intelligence</strong>, or <strong>machine learning</strong> area.</p>
                             <ul class="nav flex-row">
@@ -128,23 +128,23 @@ function createTemplate() {
                 </p>
                 <div class="navbar-collapse collapse w-100 h-100" id="collapse">
                     <ul class="nav navbar-nav ms-auto w-100 justify-content-end">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">HOME</a>
+                        <li class="nav-item" menu="home">
+                            <div class="nav-link" menu="home">HOME</div>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">ABOUT US</a>
+                        <li class="nav-item" menu="about">
+                            <div class="nav-link" menu="about">ABOUT US</div>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">PORTFOLIO</a>
+                        <li class="nav-item" menu="portfolio">
+                            <div class="nav-link" menu="portfolio">PORTFOLIO</div>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">BLOG</a>
+                        <li class="nav-item" menu="blog">
+                            <div class="nav-link" menu="blog">BLOG</div>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">CONTACT US</a>
+                        <li class="nav-item" menu="contact">
+                            <div class="nav-link" menu="contact">CONTACT US</div>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">TODOS</a>
+                        <li class="nav-item" menu="todos">
+                            <div class="nav-link" menu="todos">TODOS</div>
                         </li>
                     </ul>
                 </div>

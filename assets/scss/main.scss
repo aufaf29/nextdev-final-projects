@@ -8,6 +8,48 @@ body {
     font-family: 'Lexend Deca', sans-serif;
 }
 
-.main-area {
+#main-area {
+    padding: 0;
     min-height: 1500px;
+}
+
+.carousel-caption {
+    color: white !important;
+}
+
+.carousel-control-prev-icon {
+    color: white !important;
+}
+
+
+.carousel-item {
+    img {
+        height: calc(100vh - 78px);
+    }
+}
+
+.bar-title {
+    height: 150px;
+    min-width: 100%;
+}
+
+.content-container {
+    position: relative;
+    color: white;
+
+    img {
+        position: absolute;
+    }
+
+    .title {
+        position: absolute;
+        padding-top: 60px;
+    }
+
+}
+
+.main-wrapper-x {
+    #content-wrapper {
+        padding-top: 160px;
+    }
 }

@@ -3,18 +3,9 @@ window.onbeforeunload = function () {
     window.scrollTo(0, 0);
 }
 
-function text() {
-    $("#header-component")[0].shadowRoot.querySelector("#collapse-menu").style.display = "none"
-}
- 
 $(document).ready(() => {
-    
-    $(".nav-item").click((event) => {
-        $(".nav-item.nav-active").removeClass("nav-active");
-        $(event.target).addClass("nav-active");
-    });
 
-    console.log($("#header-component")[0].shadowRoot.querySelector("#navbar-toggler"))
+    $("#main-area").load("/pages/home.html");
 
     $($("#header-component")[0].shadowRoot).find("#navbar-toggler").click(() => {
         let state = $("#header-component")[0].shadowRoot.querySelector("#collapse-menu");
@@ -24,6 +15,32 @@ $(document).ready(() => {
             state.style.display = "contents";
         }
     });
+    
+    $($("#header-component")[0].shadowRoot).find(".nav-item").on("click", (event) => {
+        let menu = event.target.getAttribute("menu");
+        let type = event.target.getAttribute("class").replace(/\s/g, '');
+        $($("#header-component")[0].shadowRoot).find(".nav-item.nav-active").removeClass("nav-active");
+        
+        console.log(type, "nav-item", type.localeCompare("nav-item"))
+        
+        if (type.localeCompare("nav-item") == 0) {
+            console.log("MASUK SINI")
+            event.target.classList.add("nav-active");
+        } else {
+            console.log("MASUK SANA")
+
+            console.log(event.target.parentElement);
+            event.target.parentElement.classList.add("nav-active");
+        }
+
+        $("#main-area").load(`/pages/${menu}.html`);
+    })
+
+    $($("#footer-component")[0].shadowRoot).find(".nav-item").on("click", (event) => {
+        let menu = event.target.getAttribute("menu")
+        $("#main-area").load(`/pages/${menu}.html`);
+        window.scrollTo(0, 0);
+    })
 
 
 });
