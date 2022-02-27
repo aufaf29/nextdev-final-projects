@@ -1,5 +1,13 @@
-@import "_var.scss";
+@import "var";
+@import "body";
+
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&family=Roboto+Slab:wght@100;200;300;500;600;700;800&display=swap');
 
 body {
     background-color: $theme-body;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+.main-area {
+    min-height: 1500px;
 }

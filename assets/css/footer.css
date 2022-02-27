@@ -1,0 +1,197 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&family=Roboto+Slab:wght@100;200;300;500;600;700;800&display=swap");
+.navbar {
+  padding: 0.2rem 0 !important;
+  background-color: black;
+}
+
+.navbar .container p {
+  margin-top: 13px;
+  padding: 0;
+  color: white;
+  font-size: 14px;
+  font-family: 'Roboto Slab', serif;
+}
+
+.navbar .container p:hover {
+  color: white;
+}
+
+.navbar-nav {
+  height: 100% !important;
+}
+
+.nav-item {
+  height: 100%;
+  padding: 0 0.7rem;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.nav-item a {
+  width: 100%;
+  height: 100%;
+  color: white !important;
+}
+
+.nav-item a:hover {
+  color: #2eb3ff !important;
+}
+
+.information {
+  width: 100%;
+  background-color: #313131;
+  color: white !important;
+}
+
+.footer-contents {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: 'footer-about footer-contact footer-message';
+  -ms-grid-columns: 30% 30% 30%;
+      grid-template-columns: 30% 30% 30%;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+  gap: 0 5%;
+}
+
+.footer-contents .footer-about {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: footer-about;
+}
+
+.footer-contents .footer-contact {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: footer-contact;
+}
+
+.footer-contents .footer-message {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: footer-message;
+}
+
+.footer-contents div p {
+  font-size: 13px;
+  font-weight: 200;
+  margin-bottom: 13px;
+}
+
+.footer-contents div div input, .footer-contents div div textarea, .footer-contents div div button {
+  font-size: 14px;
+  font-weight: 300;
+  font-style: none;
+}
+
+.footer-contents div div button {
+  width: 100%;
+}
+
+.footer-contents div .company-logo {
+  width: 100px;
+  padding: 10px;
+  margin: 10px 0;
+  background-color: white;
+  border-radius: 7px;
+}
+
+.footer-contents div .company-logo img {
+  width: 100%;
+  height: auto;
+  margin: auto;
+}
+
+.footer-contents div ul li {
+  padding: 0 20px 0 0;
+}
+
+.footer-contents div ul li a .sosmed-icon {
+  width: 30px;
+  height: 30px;
+  background-color: black;
+  text-align: center;
+  font-size: 15px;
+  padding-top: 4px;
+  text-decoration: none;
+  color: white;
+}
+
+.footer-contents div ul li a .sosmed-icon:hover {
+  background-color: bisque;
+}
+
+.footer-contents div ul li a .facebook:hover {
+  background-color: #0077df;
+}
+
+.footer-contents div ul li a .twitter:hover {
+  background-color: #2b8ee6;
+}
+
+.footer-contents div ul li a .instagram:hover {
+  background-color: #f800ba;
+}
+
+.footer-contents div ul li a .google-plus:hover {
+  background-color: #b90000;
+}
+
+.footer-contents div table {
+  color: white !important;
+  font-weight: 200;
+}
+
+.footer-contents div table tbody tr .contact-type {
+  padding: 8px 8px 8px 0;
+}
+
+.footer-contents div table tbody tr td {
+  font-size: 13px;
+}
+
+.footer-contents div table tbody tr td p {
+  margin: 0;
+}
+
+.footer-contents div table tbody tr td .contact-detail {
+  margin-bottom: 15px;
+}
+
+.footer-contents div table tbody tr td .contact-icon {
+  font-size: 15px;
+  width: 30px;
+  height: 30px;
+  background-color: black;
+  text-align: center;
+  padding-top: 4px;
+}
+
+@media screen and (max-width: 1000px) {
+  .footer-contents {
+    display: -ms-grid;
+    display: grid;
+        grid-template-areas: 'footer-about footer-contact' 'footer-message footer-message';
+    -ms-grid-columns: 45% 45%;
+        grid-template-columns: 45% 45%;
+    -ms-grid-rows: auto auto;
+        grid-template-rows: auto auto;
+    gap: 20px 10%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .footer-contents {
+    display: -ms-grid;
+    display: grid;
+        grid-template-areas: 'footer-about' 'footer-contact' 'footer-message';
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+    -ms-grid-rows: auto auto auto;
+        grid-template-rows: auto auto auto;
+    gap: 20px 0;
+  }
+  a .sosmed-icon {
+    margin-bottom: 20px;
+  }
+}

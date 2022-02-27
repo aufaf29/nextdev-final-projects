@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&family=Roboto+Slab:wght@100;200;300;500;600;700;800&display=swap');
+
+.navbar {
+    padding: 0.2rem 0 !important;
+    background-color: rgb(0, 0, 0);
+
+    .container p {
+        margin-top: 13px;
+        padding: 0;
+        color: white;
+        font-size: 14px;
+        font-family: 'Roboto Slab', serif;
+
+        &:hover {
+            color: white;
+        }
+    }
+}
+
+.navbar-nav {
+    height: 100% !important;
+}
+
+.nav-item {
+    height: 100%;
+    padding: 0 0.7rem;
+    transition: all 0.3s ease;
+    
+    a {
+        width: 100%;
+        height: 100%;
+        color: white !important;
+
+        &:hover {
+            color: rgb(46, 179, 255) !important;
+        }
+    }
+    
+}
+
+.information {
+    width: 100%;
+    background-color: rgb(49, 49, 49);
+    color: white !important;
+}
+
+.footer-contents {
+    display: grid;
+    grid-template-areas: 'footer-about footer-contact footer-message';
+    grid-template-columns: 30% 30% 30%;
+    grid-template-rows: auto;
+    gap: 0 5%;
+
+    .footer-about {
+        grid-area: footer-about;
+    }
+
+    .footer-contact {
+        grid-area: footer-contact;
+    }
+
+    .footer-message {
+        grid-area: footer-message;
+    }
+
+    div {
+        p {
+            font-size: 13px;
+            font-weight: 200;
+            margin-bottom: 13px;
+        }
+
+        div {
+            input, textarea, button {
+                font-size: 14px;
+                font-weight: 300;
+                font-style: none;
+            }
+
+            button {
+                width: 100%;
+            }
+
+        }
+
+        .company-logo {
+            width: 100px;
+            padding: 10px;
+            margin: 10px 0;
+            background-color: rgb(255, 255, 255);
+            border-radius: 7px;
+
+            img {
+                width: 100%;
+                height: auto;
+                margin: auto;
+            }
+        }
+
+        ul {
+            li {
+                padding: 0 20px 0 0;
+
+                a .sosmed-icon {
+                    width: 30px;
+                    height: 30px;
+                    background-color: black;
+                    text-align: center;
+                    font-size: 15px;
+                    padding-top: 4px;
+                    text-decoration: none;
+                    color: white;
+
+                    &:hover {
+                        background-color: bisque;   
+                    }
+                }
+
+                a {
+                    .facebook:hover {
+                        background-color: rgb(0, 119, 223);
+                    }
+                    .twitter:hover {
+                        background-color: rgb(43, 142, 230);
+                    }
+                    .instagram:hover {
+                        background-color: rgb(248, 0, 186);
+                    }
+                    .google-plus:hover {
+                        background-color: rgb(185, 0, 0);
+                    }
+                }
+            } 
+        }
+
+        table {
+            color: rgb(255, 255, 255) !important;
+            font-weight: 200;
+
+            tbody {
+                tr .contact-type {
+                    padding: 8px 8px 8px 0;
+                }
+
+                tr td {
+                    font-size: 13px;
+
+                    p {
+                        margin: 0;
+                    }
+
+                    .contact-detail {
+                        margin-bottom: 15px;
+                    }
+                }
+
+                tr td .contact-icon {
+                    font-size: 15px;
+                    width: 30px;
+                    height: 30px;
+                    background-color: black;
+                    text-align: center;
+                    padding-top: 4px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    
+    .footer-contents {
+        display: grid;
+        grid-template-areas:    'footer-about footer-contact'
+                                'footer-message footer-message';
+        grid-template-columns: 45% 45%;
+        grid-template-rows: auto auto;
+        gap: 20px 10%;
+    }
+
+}
+
+@media screen and (max-width: 576px) {
+    
+    .footer-contents {
+        display: grid;
+        grid-template-areas:    'footer-about'
+                                'footer-contact'
+                                'footer-message';
+        grid-template-columns: 100%;
+        grid-template-rows: auto auto auto;
+        gap: 20px 0;
+    }
+
+    a .sosmed-icon {
+        margin-bottom: 20px;
+    }
+
+}
