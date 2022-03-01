@@ -53,20 +53,19 @@ function printTODO() {
     
 }
 
+function addTODOS() {
+    let todos = getTODOS() == null ? [] : getTODOS();
+    todos.push({
+        "task": $("#newtodo").val(),
+        "checked": false
+    })
+    setTODOS(todos);
+    $("#newtodo").val("");
+}
+
 $(document).ready(() => {
     
     
     printTODO();
 
-    // $(".form-check-input").
-    
-    $("#button-add").click(() => {
-        let todos = getTODOS() == null ? [] : getTODOS();
-        todos.push({
-            "task": $("#newtodo").val(),
-            "checked": false
-        })
-        setTODOS(todos);
-        $("#newtodo").val("");
-    });
 })
