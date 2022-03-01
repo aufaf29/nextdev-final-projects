@@ -67,6 +67,6 @@ $(document).ready(() => {
             "checked": false
         })
         setTODOS(todos);
-        $("#newtodo").val("");
+        // $("#newtodo").val("");
     });
 })
