@@ -106,13 +106,13 @@ function createTemplate() {
                             <p>If there is anything you want to know, please drop your question here!.</p>
                             <form class="row  g-3">
                                 <div class="col-md-12 w-100 gap-2">
-                                    <textarea spellcheck="false" class="form-control" id="textarea-message" rows="3" placeholder="Message or Question"></textarea>
+                                    <textarea spellcheck="false" class="form-control rounded-0" id="textarea-message" rows="3" placeholder="Message or Question"></textarea>
                                 </div>
                                 <div class="col-md-9">
-                                    <input id="email-message" type="text" class="form-control" placeholder="Email address">
+                                    <input id="email-message" type="text" class="form-control rounded-0" placeholder="Email address">
                                 </div>
                                 <div class="col-md-3">
-                                    <button class="btn btn-primary btn-block" type="button">Send</button>
+                                    <button class="btn btn-primary btn-block rounded-0" type="button">Send</button>
                                 </div>
                             </form>
                         </div>
@@ -124,7 +124,7 @@ function createTemplate() {
         <nav class="navbar navbar-light navbar-expand-xl bg-faded justify-content-center">
             <div class="container">
                 <p class="navbar-brand d-flex w-50 me-auto">
-                    © 2020 Aufa Fadhlurohman
+                    © 2022 Aufa Fadhlurohman
                 </p>
                 <div class="navbar-collapse collapse w-100 h-100" id="collapse">
                     <ul class="nav navbar-nav ms-auto w-100 justify-content-end">
