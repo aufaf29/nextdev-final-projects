@@ -36,7 +36,7 @@ function printTODO() {
                     <div class="row">
                         <div class="todo-task col-11">
                             <div class="form-check">
-                                <input class="form-check-input rounded-0" type="checkbox" value="" id="${'todo-' + i}" ${(element.checked) ? "checked" : ""}>
+                                <input class="form-check-input rounded-0" type="checkbox" value="checked" id="${'todo-' + i}" ${(element.checked) ? "checked" : ""}>
                                 <label class="form-check-label" for="${'todo-' + i}">
                                     ${(element.checked) ? "<s>"+element.task+"</s>" : element.task}
                                 </label>
@@ -57,6 +57,8 @@ $(document).ready(() => {
     
     
     printTODO();
+
+    // $(".form-check-input").
     
     $("#button-add").click(() => {
         let todos = getTODOS() == null ? [] : getTODOS();
