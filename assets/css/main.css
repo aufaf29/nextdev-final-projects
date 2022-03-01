@@ -158,19 +158,26 @@ body {
   padding: 170px 24px 20px 0px;
 }
 
-.contoh {
+.message-information {
   width: 70%;
   height: 400px;
-  margin: 40px 15%;
+  margin: 200px 15%;
   position: absolute;
   top: 0;
   bottom: 0;
   left: 0;
+  text-align: center;
   color: white !important;
 }
 
-.contoh h1 {
+.message-information h1 {
   color: white !important;
+  font-size: 60px;
+}
+
+.message-information .order-now {
+  margin-top: 40px;
+  width: 20%;
 }
 
 #blog-main-headline {
@@ -244,4 +251,16 @@ body {
 
 .todos-item .todo-delete:hover {
   background-color: #d40000;
+}
+
+.modal-dialog {
+  z-index: 1000 !important;
+}
+
+.modal-backdrop .fade .show {
+  z-index: 100 !important;
+}
+
+.relative {
+  position: relative;
 }

@@ -13,10 +13,10 @@
             <div class="col-md-10 rounded-0">
                 <label for="newtodo" class="visually-hidden">New</label>
                 <input type="text" class="form-control rounded-0" id="newtodo"
-                    placeholder="ex. Meeting with Project Team">
+                    placeholder="ex. Meeting with Project Team" onkeypress="enterTODOS(event)">
             </div>
             <div class="col-md-2 d-grid rounded-0 mx-auto">
-                <button type="button" id="button-add" class="btn btn-primary btn-block rounded-0" onclick="addTODOS()">Add</button>
+                <button type="button" id="button-add" class="btn btn-primary btn-block rounded-0" onclick="addTODOS(event)">Add</button>
             </div>
         </div>
 
