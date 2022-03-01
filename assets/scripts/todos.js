@@ -54,6 +54,8 @@ function printTODO() {
 }
 
 function addTODOS() {
+
+    
     let todos = getTODOS() == null ? [] : getTODOS();
     todos.push({
         "task": $("#newtodo").val(),
