@@ -3,9 +3,6 @@ window.onbeforeunload = function () {
     window.scrollTo(0, 0);
 }
 
-
-
-
 $(document).ready(() => {
 
     $("#main-area").load("/pages/home.html");
@@ -23,16 +20,10 @@ $(document).ready(() => {
         let menu = event.target.getAttribute("menu");
         let type = event.target.getAttribute("class").replace(/\s/g, '');
         $($("#header-component")[0].shadowRoot).find(".nav-item.nav-active").removeClass("nav-active");
-        
-        console.log(type, "nav-item", type.localeCompare("nav-item"))
-        
+                
         if (type.localeCompare("nav-item") == 0) {
-            console.log("MASUK SINI")
             event.target.classList.add("nav-active");
         } else {
-            console.log("MASUK SANA")
-
-            console.log(event.target.parentElement);
             event.target.parentElement.classList.add("nav-active");
         }
 
