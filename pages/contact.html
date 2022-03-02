@@ -1,4 +1,3 @@
-
 <div class="main-wrapper-x">
     <div class="content-container">
         <img class="bar-title" src="/assets/img/bar.png" alt="">
@@ -9,9 +8,47 @@
 
     <div id="content-wrapper" class="container">
 
-        <h3>Location</h3>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6168.45046937485!2d106.8284929582133!3d-6.363080308312184!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69ec1a804e8b85%3A0xd7bf80e1977cea07!2sUniversitas%20Indonesia!5e0!3m2!1sid!2sid!4v1646135033474!5m2!1sid!2sid" style="width: 100%; height: 500px; border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <h3 class="title-contact">Location</h3>
+        <iframe
+            class="map-contact"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6168.45046937485!2d106.8284929582133!3d-6.363080308312184!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69ec1a804e8b85%3A0xd7bf80e1977cea07!2sUniversitas%20Indonesia!5e0!3m2!1sid!2sid!4v1646135033474!5m2!1sid!2sid"
+            style="width: 100%; height: 300px; border:0;" allowfullscreen="" loading="lazy">
+        </iframe>
+
+        <br><br>
         
+        <h3 class="title-contact">Reach Us</h3>
+        
+        <form class="row gx-3 gy-4">
+            <div class="col-12">
+                <textarea type="text" class="form-control rounded-0" id="message" placeholder="Drop your message here!" rows="5"></textarea>
+            </div>
+            <div class="col-lg-3">
+                <input type="text" class="form-control rounded-0" placeholder="Name" id="name">
+            </div>
+            <div class="col-lg-3">
+                <input type="email" class="form-control rounded-0" placeholder="Email" id="email">
+            </div>
+            <div class="col-lg-2">
+                <input type="text" class="form-control rounded-0" placeholder="City" id="city">
+            </div>
+            <div class="col-lg-2">
+                <select id="state" class="form-select rounded-0">
+                    <option selected>Choose State...</option>
+                    <option>Indonesia</option>
+                    <option>Malaysia</option>
+                    <option>Singapore</option>
+                </select>
+            </div>
+            <div class="col-lg-2">
+                <button type="submit" class="btn btn-primary rounded-0 button-message-contact">Send</button>
+            </div>
+        </form>
+
+        <br><br>
+
+
+
     </div>
 </div>
 <script src="/assets/scripts/contact.js"></script>
