@@ -565,3 +565,177 @@ body {
   width: 100%;
   height: auto;
 }
+
+.predictions-item-green {
+  width: 100%;
+  min-height: 150px;
+  background-color: #C0DEB8;
+  margin-top: 30px;
+  font-size: 14px;
+}
+
+.predictions-item-green .prediction-text {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: prediction-text;
+}
+
+.predictions-item-green .prediction-text p {
+  padding: 10px;
+}
+
+.predictions-item-green .prediction-class {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: prediction-class;
+  background-color: #00960F !important;
+}
+
+.predictions-item-green .prediction-class p {
+  padding: 5px;
+  font-size: 12px;
+  text-align: center;
+  color: white;
+}
+
+.predictions-item-green .prediction-score {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: prediction-score;
+}
+
+.predictions-item-green .prediction-score p {
+  padding: 5px 10px;
+  font-size: 12px;
+}
+
+.predictions-item-green .prediction-notes {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  grid-area: prediction-notes;
+}
+
+.predictions-item-green .prediction-notes p {
+  padding: 5px 10px;
+  font-size: 12px;
+}
+
+.predictions-item-green .prediction-task-container {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: 'prediction-text prediction-text prediction-text' 'prediction-class prediction-score prediction-notes' !important;
+  -ms-grid-rows: 90px 30px;
+      grid-template-rows: 90px 30px;
+  -ms-grid-columns: 30% 20% 48%;
+      grid-template-columns: 30% 20% 48%;
+  gap: 10px 1%;
+  padding: 10px;
+}
+
+.predictions-item-green .prediction-task-container > div {
+  background-color: #ECF4ED;
+}
+
+.predictions-item-green .prediction-delete {
+  background-color: #414141;
+  height: 150px;
+  color: white;
+  font-size: 22px;
+  padding-top: 5px;
+  padding: 53px 0 0 0;
+  margin: 0;
+  text-align: center;
+}
+
+.predictions-item-green .prediction-delete:hover {
+  background-color: #353535;
+  cursor: pointer;
+}
+
+.predictions-item-red {
+  width: 100%;
+  min-height: 150px;
+  background-color: #deb8b8;
+  margin-top: 30px;
+  font-size: 14px;
+}
+
+.predictions-item-red .prediction-text {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: prediction-text;
+}
+
+.predictions-item-red .prediction-text p {
+  padding: 10px;
+}
+
+.predictions-item-red .prediction-class {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: prediction-class;
+  background-color: #961e00 !important;
+}
+
+.predictions-item-red .prediction-class p {
+  padding: 5px;
+  font-size: 12px;
+  text-align: center;
+  color: white;
+}
+
+.predictions-item-red .prediction-score {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: prediction-score;
+}
+
+.predictions-item-red .prediction-score p {
+  padding: 5px 10px;
+  font-size: 12px;
+}
+
+.predictions-item-red .prediction-notes {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  grid-area: prediction-notes;
+}
+
+.predictions-item-red .prediction-notes p {
+  padding: 5px 10px;
+  font-size: 12px;
+}
+
+.predictions-item-red .prediction-task-container {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: 'prediction-text prediction-text prediction-text' 'prediction-class prediction-score prediction-notes' !important;
+  -ms-grid-rows: 90px 30px;
+      grid-template-rows: 90px 30px;
+  -ms-grid-columns: 30% 20% 48%;
+      grid-template-columns: 30% 20% 48%;
+  gap: 10px 1%;
+  padding: 10px;
+}
+
+.predictions-item-red .prediction-task-container > div {
+  background-color: #f4ecec;
+}
+
+.predictions-item-red .prediction-delete {
+  background-color: #414141;
+  height: 150px;
+  color: white;
+  font-size: 22px;
+  padding-top: 5px;
+  padding: 53px 0 0 0;
+  margin: 0;
+  text-align: center;
+}
+
+.predictions-item-red .prediction-delete:hover {
+  background-color: #353535;
+  cursor: pointer;
+}

@@ -1,0 +1,35 @@
+<div class="main-wrapper-x">
+    <div class="content-container">
+        <img class="bar-title" src="/assets/img/bar.png" alt="">
+        <div class="container">
+            <h1 class="title">Cyberbullying Prediction</h1>
+        </div>
+    </div>
+
+    <div id="content-wrapper" class="container">
+
+        <h4>Predict Text</h4>
+        <div class="mb-4 row g-3">
+            <div class="col-md-8">
+                <label for="input-text" class="visually-hidden"></label>
+                <textarea class="form-control border-0 rounded-0" id="input-text" rows="3" spellcheck="false"></textarea>
+            </div>
+            <div class="col-md-2 d-grid mx-auto">
+                <select class="custom-select mr-sm-2 rounded-0 text-center border-0" id="language">
+                  <option class="rounded-0 border-0" style="min-height: 70px !important;" value="id" selected>Indonesia</option>
+                  <option class="rounded-0 border-0" style="min-height: 70px !important;" value="en">English</option>
+                  <!-- <option class="rounded-0 border-0" style="min-height: 70px !important;" value="id-BiLSTM" selected>Indonesia BiLTSM</option> -->
+                </select>
+            </div>
+            <div class="col-md-2 d-grid rounded-0 mx-auto">
+                <button type="button" id="button-add-prediction" class="btn btn-primary btn-block rounded-0" onclick="addPrediction(event)">Predict</button>
+            </div>
+        </div>
+
+        <div id="predictions-container"></div>
+
+
+    </div>
+</div>
+<script src="/assets/scripts/cyberbullying.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>

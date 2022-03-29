@@ -467,3 +467,154 @@ body {
         height: auto;
     }
 }
+
+
+.predictions-item-green {
+    width: 100%;
+    min-height: 150px;
+    background-color: #C0DEB8;
+    margin-top: 30px;
+    font-size: 14px;
+
+    .prediction-text {
+        grid-area: prediction-text;
+        p {
+            padding: 10px;
+        }
+    }
+
+    .prediction-class {
+        grid-area: prediction-class;
+        background-color: #00960F !important;
+        p {
+            padding: 5px;
+            font-size: 12px;
+            text-align: center;
+            color: white;
+        }
+    }
+
+    .prediction-score {
+        grid-area: prediction-score;
+        p {
+            padding: 5px 10px;
+            font-size: 12px;
+        }
+    }
+
+    .prediction-notes {
+        grid-area: prediction-notes;
+        p {
+            padding: 5px 10px;
+            font-size: 12px;
+        }
+    }
+
+    .prediction-task-container {
+        display: grid;
+        grid-template-areas: 
+            'prediction-text prediction-text prediction-text'
+            'prediction-class prediction-score prediction-notes' !important;
+        grid-template-rows: 90px 30px;
+        grid-template-columns: 30% 20% 48%; 
+        gap: 10px 1%;
+        padding: 10px;
+    }
+
+    .prediction-task-container > div {
+        background-color: #ECF4ED;
+    }
+
+    .prediction-delete {
+        background-color: rgb(65, 65, 65);
+        height: 150px;
+        color: white;
+        font-size: 22px;
+        padding-top: 5px;
+        padding: 53px 0 0 0;
+        margin: 0;
+        text-align: center;
+
+        &:hover {
+            background-color: rgb(53, 53, 53);
+            cursor: pointer;
+        }
+
+
+    }
+}
+
+.predictions-item-red {
+    width: 100%;
+    min-height: 150px;
+    background-color: #deb8b8;
+    margin-top: 30px;
+    font-size: 14px;
+
+    .prediction-text {
+        grid-area: prediction-text;
+        p {
+            padding: 10px;
+        }
+    }
+
+    .prediction-class {
+        grid-area: prediction-class;
+        background-color: #961e00 !important;
+        p {
+            padding: 5px;
+            font-size: 12px;
+            text-align: center;
+            color: white;
+        }
+    }
+
+    .prediction-score {
+        grid-area: prediction-score;
+        p {
+            padding: 5px 10px;
+            font-size: 12px;
+        }
+    }
+
+    .prediction-notes {
+        grid-area: prediction-notes;
+        p {
+            padding: 5px 10px;
+            font-size: 12px;
+        }
+    }
+
+    .prediction-task-container {
+        display: grid;
+        grid-template-areas: 
+            'prediction-text prediction-text prediction-text'
+            'prediction-class prediction-score prediction-notes' !important;
+        grid-template-rows: 90px 30px;
+        grid-template-columns: 30% 20% 48%; 
+        gap: 10px 1%;
+        padding: 10px;
+    }
+
+    .prediction-task-container > div {
+        background-color: #f4ecec;
+    }
+
+    .prediction-delete {
+        background-color: rgb(65, 65, 65);
+        height: 150px;
+        color: white;
+        font-size: 22px;
+        padding-top: 5px;
+        padding: 53px 0 0 0;
+        margin: 0;
+        text-align: center;
+
+        &:hover {
+            background-color: rgb(53, 53, 53);
+            cursor: pointer;
+        }
+
+
+    }
+}

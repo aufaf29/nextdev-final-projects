@@ -20,22 +20,22 @@ function createTemplate(menu = 1) {
                 <div class="navbar-collapse collapse w-100" id="collapse-menu">
                     <ul id="navbar-nav" class="nav navbar-nav ms-auto w-100 justify-content-end animate__animated animate__fadeIn">
                         <li class="nav-item ${(menu == 1) ? "nav-active" : ""}" menu="home">
-                            <div class="nav-link" menu="home">HOME</div>
+                            <div id="navbar-access-home" class="nav-link" menu="home">HOME</div>
                         </li>
                         <li class="nav-item ${(menu == 2) ? "nav-active" : ""}" menu="about">
-                            <div class="nav-link" menu="about">ABOUT US</div>
+                            <div id="navbar-access-about" class="nav-link" menu="about">ABOUT US</div>
                         </li>
                         <li class="nav-item ${(menu == 3) ? "nav-active" : ""}" menu="portfolio">
-                            <div class="nav-link" menu="portfolio">PORTFOLIO</div>
+                            <div id="navbar-access-portfolio" class="nav-link" menu="portfolio">PORTFOLIO</div>
                         </li>
                         <li class="nav-item ${(menu == 4) ? "nav-active" : ""}" menu="blog">
-                            <div class="nav-link" menu="blog">BLOG</div>
+                            <div id="navbar-access-blog" class="nav-link" menu="blog">BLOG</div>
                         </li>
                         <li class="nav-item ${(menu == 5) ? "nav-active" : ""}" menu="contact">
-                            <div class="nav-link" menu="contact">CONTACT US</div>
+                            <div id="navbar-access-contact" class="nav-link" menu="contact">CONTACT US</div>
                         </li>
                         <li class="nav-item ${(menu == 6) ? "nav-active" : ""}" menu="todos">
-                            <div class="nav-link" menu="todos">TODOS</div>
+                            <div id="navbar-access-todos" class="nav-link" menu="todos">TODOS</div>
                         </li>
                     </ul>
                 </div>
