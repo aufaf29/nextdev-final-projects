@@ -3,6 +3,7 @@ window.onbeforeunload = function () {
     window.scrollTo(0, 0);
 }
 
+
 $(document).ready(() => {
 
     $("#main-area").load("/pages/home.html");
